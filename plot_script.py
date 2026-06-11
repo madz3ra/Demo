@@ -14,8 +14,8 @@ fig, ax1 = plt.subplots()
 # Левая ось: S21
 color1 = 'tab:blue'
 ax1.set_xlabel('Частота, Гц')
-ax1.set_ylabel('S21', color=color1)
-ax1.plot(freq, s21, color=color1, marker='o', linestyle='-', markersize=4, label='S21')
+ax1.set_ylabel('S21, дБ', color=color1)
+ax1.plot(freq, s21, color=color1, marker='o', linestyle='-', markersize=2, label='S21')
 ax1.tick_params(axis='y', labelcolor=color1)
 ax1.grid(True, linestyle='--', alpha=0.7)
 
@@ -24,8 +24,8 @@ ax2 = ax1.twinx()
 color2 = 'tab:red'
 color3 = 'tab:green'
 ax2.set_ylabel('S11, S22', color='black')
-ax2.plot(freq, s11, color=color2, marker='s', linestyle='-', markersize=4, label='S11')
-ax2.plot(freq, s22, color=color3, marker='^', linestyle='-', markersize=4, label='S22')
+ax2.plot(freq, s11, color=color2, marker='s', linestyle='-', markersize=2, label='S11')
+ax2.plot(freq, s22, color=color3, marker='^', linestyle='-', markersize=2, label='S22')
 ax2.tick_params(axis='y', labelcolor='black')
 
 # Легенда
