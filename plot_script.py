@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Тестовые данные (позже заменим на CSV)
+# Тестовые данные (позже заменю на CSV)
 x = np.linspace(0, 10, 20)
 y1 = np.sin(x)
 y2 = np.cos(x) * 100
